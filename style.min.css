@@ -1810,10 +1810,9 @@ a{color:#7ea053;-webkit-transition:all ease-out .3s;transition:all ease-out .3s}
 }@media screen and (min-width:1200px){}
 .logo,h1.logo{width:150px;padding-top:40px;margin:0 auto}
 @media screen and (min-width:680px){.logo,h1.logo{width:200px;float:left;margin:0;padding-top:75px}
-}.logo a,h1.logo a{width:100%;display:block}
+}.logo a,h1.logo a{width:100%;display:block;float:left}
 @media screen and (min-width:680px){.logo a,h1.logo a{width:100%}
-}@media screen and (min-width:1200px){}
-.logo a img,h1.logo a img{width:100%;height:auto;float:left}
+}.logo a img,h1.logo a img{width:100%;height:auto;float:left}
 .home #masthead .wrapper{position:relative}
 @media screen and (min-width:680px){.home #masthead .logo,.home #masthead h1.logo{position:absolute}
 }.site-footer{width:100%;clear:both}
@@ -1877,6 +1876,9 @@ ul.galleries li.current a:hover img{-webkit-transform:none;-ms-transform:none;tr
 .bigpic img.loader{display:none;width:32px;height:auto;position:absolute;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%);float:none;left:46%}
 #__lpform_input_1_1_3{display:none}
 .site-footer{padding-top:60px}
+.error404 .page-header{text-align:center;padding-top:10%}
+.error404 .page-header h1{font-size:35px;margin-bottom:5px}
+.error404 .page-header p{margin-top:0}
 .blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
 .comment-content a{word-wrap:break-word}
 .bypostauthor{display:block}

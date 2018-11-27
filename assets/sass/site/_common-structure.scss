@@ -103,11 +103,9 @@ a {
 .logo a, h1.logo a {
 	width: 100%;
 	display: block;
+	float: left;
 	@media screen and (min-width: $tabwidth) {
 		width: 100%;
-	}
-	@media screen and (min-width: $deskwidth) {
-		/*width: 1200px;*/
 	}
 	img {
 		width: 100%;
