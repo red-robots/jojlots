@@ -1,0 +1,132 @@
+* { -webkit-hyphens: none; }
+div {
+	/* These are technically the same, but use both */
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+
+	-ms-word-break: break-all;
+	/* This is the dangerous one in WebKit, as it breaks things wherever */
+	word-break: break-all;
+	/* Instead use this non-standard one: */
+	word-break: break-word;
+
+	/* Adds a hyphen where the word breaks, if supported (No Blink) */
+	-ms-hyphens: none;
+	-moz-hyphens: none;
+	-webkit-hyphens: none;
+	hyphens: none;
+}
+body {
+	background:url('images/pattern.png') 0 0 repeat #f6f6f6;
+	font-family: $font__main;
+	font-size: 15px;
+	line-height: $font__line-height-body;
+	color: $color-generic;
+}
+h1,h2,h3,h4,h5,h6,p,li,a,span,strong {
+    overflow-wrap: normal;
+    word-wrap: normal;
+
+    -ms-word-break: normal;
+    word-break: normal;
+    word-break: normal;
+
+    -ms-hyphens: none;
+    -moz-hyphens: none;
+    -webkit-hyphens: none;
+    hyphens: none;
+    page-break-inside: avoid;
+}
+a {
+	color: $color-green;
+	@include transition( all ease-out .3s);
+}
+.wrapper, .clear {clear: both;}
+.wrapper:before, .wrapper:after, .clear:before,.clear:after {content: " "; display: table; }
+.wrapper:after, .clear:after {clear: both;}
+.wrapper, .clear {*zoom: 1;}
+.wrapper {
+	width: 100%;
+	margin: 0px auto;
+	padding: 0 20px;
+	
+	@media screen and (min-width: $tabwidth) {
+		width: 100%;
+	}
+	@media screen and (min-width: $deskwidth) {
+		width: 1280px;
+	}
+}
+#page {
+	border-top:15px solid $color-green;
+}
+.content-area {
+	width: 100%;
+	margin: 0px auto;
+	
+	@media screen and (min-width: $tabwidth) {
+		width: 66%;
+		float: left;
+		margin: 0;
+	}
+	@media screen and (min-width: $deskwidth) {
+		/*width: 1200px;*/
+	}
+}
+
+.widget-area {
+	width: 100%;
+	margin: 0px auto;
+	
+	@media screen and (min-width: $tabwidth) {
+		width: 26%;
+		float: right;
+		margin: 0;
+	}
+	@media screen and (min-width: $deskwidth) {
+		/*width: 1200px;*/
+	}
+}
+
+/* Logo */
+.logo , h1.logo {
+	width: 150px;
+	padding-top: 40px;
+	margin: 0 auto;
+	@media screen and (min-width: $tabwidth) {
+		width: 200px;
+		float: left;
+		margin: 0;
+		padding-top: 75px;
+	}
+}
+.logo a, h1.logo a {
+	width: 100%;
+	display: block;
+	@media screen and (min-width: $tabwidth) {
+		width: 100%;
+	}
+	@media screen and (min-width: $deskwidth) {
+		/*width: 1200px;*/
+	}
+	img {
+		width: 100%;
+		height: auto;
+		float: left;
+	}
+}
+
+.home #masthead {
+	.wrapper {
+		position: relative;
+	}
+	.logo , h1.logo {
+		@media screen and (min-width: $tabwidth) {
+			position: absolute;
+		}
+	}
+}
+.site-footer {
+	width: 100%;
+	clear: both;
+}

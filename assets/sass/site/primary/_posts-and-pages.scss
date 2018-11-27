@@ -1,0 +1,289 @@
+.col-left,
+.col-right {
+	box-sizing: border-box;
+	position: relative;
+}
+.col-left {
+	width: 100%;
+	margin-top: 50px;
+	@media screen and (min-width: $tabwidth) {
+		margin-top: 170px;
+	}
+	@media screen and (min-width: $deskwidth) {
+		width: 35%;
+		float: left;
+	}
+	h3.title3 {
+		font-weight: 600;
+		margin: 0 0 20px;
+		font-size: 17px;
+		text-transform: uppercase;
+		letter-spacing: 6px;
+	}
+}
+.col-right {
+	display: none;
+	@media screen and (min-width: $deskwidth) {
+		display: block;
+		width: 65%;
+		float: left;
+		margin-top: 75px;
+	}
+}
+ul.amenities {
+	margin: 0 0 50px;
+	padding: 0 0;
+	list-style: none;
+	li {
+		position: relative;
+		padding-left: 22px;
+		margin-bottom: 8px;
+		font-size: 17px;
+	}
+	.icon {
+	    position: absolute;
+	    top: 5px;
+	    left: 0;
+	    font-size: 11px;
+	}
+}
+
+.form-details {
+	border-top: 1px solid #333;
+	padding-top: 20px;
+	.form-text {
+		padding-bottom: 5px;
+	}
+	.form-bottom {
+		margin-top: 5px;
+		@media screen and (min-width: $tabwidth) {
+			margin-top: 15px;
+		}
+	}
+	.form-bottom a {
+		text-decoration: underline;
+		font-weight: 500;
+	}
+	.gform_wrapper div.validation_error {
+		margin-bottom: 0;
+	}
+}
+.theform .gform_wrapper {
+	.ginput_complex.ginput_container span.name_first label,
+	.ginput_complex.ginput_container span.name_last label {
+		display: none;
+	}
+	input[type="text"], input[type="email"], input[type="url"], input[type="password"], 
+	input[type="search"], input[type="number"], input[type="tel"], input[type="range"], 
+	input[type="date"], input[type="month"], input[type="week"], input[type="time"], 
+	input[type="datetime"], input[type="datetime-local"], input[type="color"], 
+	textarea {
+		border-radius: 0;
+		-webkit-appearance: none;
+		box-shadow: none;
+		border:1px solid #d3d3d3;
+		background: rgba(255,255,255,.65);
+		background-image: none!important;
+		outline: 0;
+		@include transition( all ease-out .3s);
+	}
+	input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]) {
+		font-size: 16px;
+		padding:7px 10px;
+		width: 100%;
+	}
+	input[type="text"], input[type="email"] {
+		&:focus {
+			border-color: $color-green;
+			box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+		}
+	}
+	label.gfield_label {
+		font-weight: 500;
+	}
+	.top_label div.ginput_container {
+		margin-top: 5px;
+	}
+	ul.gform_fields {
+		width: 100%;
+		@media screen and (min-width: $tabwidth) {
+			width: 101.5%;
+		}
+		@media screen and (min-width: $deskwidth) {
+			width: 104%;
+		}
+	}
+	ul.gform_fields li.gfield {
+		clear: none;
+		margin-top: 25px;
+		@media screen and (min-width: $tabwidth) {
+			width: 50%;
+			float: left;
+		}
+		&.email_field,
+		&.full_name {
+			width: 100%;
+		}
+	}
+	.top_label input.medium {
+		width: 100%;
+	}
+	.gform_footer {
+		width: 100%;
+		float: left;
+	}
+	.gform_footer input.button, .gform_wrapper .gform_footer input[type=submit] {
+		width: 100%;
+		padding: 15px 0 11px;
+		-webkit-appearance: none;
+		border: none;
+		box-shadow: none;
+		text-shadow: none;
+		background: $color-green;
+		color: #FFF;
+		font-size: 16px;
+		font-weight: 600;
+		border-radius: 0;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		line-height: 1;
+		@include transition(all ease-out .3s);
+		@media screen and (min-width: $tabwidth) {
+			padding: 13px 0 11px;
+		}
+		&:hover {
+			background: $color-dark-green;
+		}
+	}
+}
+.gallery-frame {
+	position: relative;
+	@media screen and (min-width: $tabwidth) {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 100%;
+		height: 30em;
+	}
+	@media screen and (min-width: $deskwidth) {
+		height: 48.8em;
+	}
+	.inner {
+		height: 100%;
+		position: relative;
+		@media screen and (min-width: $tabwidth) {
+			width: 90%;
+			float: right;
+		}
+	}
+	.bigpic {
+		width: 100%;
+		height: 100%;
+		border:1px solid #FFF;
+		img {
+			width: 100%;
+			height: 100%;
+		}
+		@media screen and (min-width: $tabwidth) {
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-attachment: scroll;
+			.mainpic {
+				display: none;
+			}
+		}
+	}
+}
+.mobile-bigpic {
+	display: block;
+	width: 100%;
+	margin-bottom: 45px;
+	position: relative;
+	text-align: center;
+	img.mainpic {
+		width: 100%;
+		height: 100%;
+	}
+	.bigpic {
+		background-image:none!important;
+	}
+	@media screen and (min-width: $deskwidth) {
+		display: none;
+	}
+}
+ul.galleries {
+	width: 100%;
+	position: relative;
+	margin: 0 0;
+	padding: 5px 0 30px;
+	list-style: none;
+	float: left;
+	@media screen and (min-width: $tabwidth) {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		z-index: 10;
+		padding: 15px 15px 15px;
+		float: none;
+	}
+	li {
+		display: block;
+		width: 15%;
+		float: left;
+		box-sizing: border-box;
+		padding:5px;
+		@media screen and (min-width: $tabwidth) {
+			width: 15%;
+		}
+		img {
+			float: left;
+			-moz-transition: -moz-transform 0.3s ease-in;
+			-webkit-transition: -webkit-transform 0.3s ease-in;
+			-o-transition: -o-transform 0.3s ease-in;
+			transform: 0.3s ease-in;
+		}
+		a {
+			display: block;
+			float: left;
+			border:1px solid #FFF;
+			box-shadow: none;
+			overflow: hidden;
+			@media screen and (min-width: $tabwidth) {
+				box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.22);
+			}
+			&:hover img {
+				-moz-transform: scale(1.2);
+				-webkit-transform: scale(1.2);
+				-o-transform: scale(1.2);
+				transform: scale(1.2);
+			}
+		}
+		&.current {
+			opacity: 0.5;
+			a:hover img {
+				transform: none;
+			}
+		}
+	}
+}
+.bigpic {
+	text-align: center;
+	img.loader {
+		display: none;
+		width: 32px;
+		height: auto;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		float: none;
+		left: 46%;
+	}
+}
+#__lpform_input_1_1_3{
+	display: none;
+}
+.site-footer {
+	padding-top: 60px;
+}
+
