@@ -97,7 +97,7 @@ function show_private_info($email,$time,$endTimeInSeconds=300) {
 		$time_stamp_date = date('Y-m-d',$time_stamp);
 		$date_now = date('Y-m-d');
 		if($check_email && ($time_stamp_date==$date_now) ) {
-			if ( $time_remaining >= $endTimeInSeconds ) {
+			if ( $time_remaining > $endTimeInSeconds ) {
 				$show_private_info = false;
 			} else {
 				$show_private_info = true;
