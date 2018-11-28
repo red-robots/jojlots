@@ -299,3 +299,80 @@ ul.galleries {
 	}
 }
 
+.gform_confirmation_message {
+	border: 1px solid #73c011;
+	padding: 10px 15px;
+	background: #eefbdd;
+	margin-top: 20px;
+	margin-bottom: 15px;
+	font-weight: 500;
+}
+
+.document-list {
+	ul.documents {
+		margin: 0 0;
+		padding: 0 0;
+		list-style: none;
+		width: 100%;
+		float: left;
+	}
+	li {
+		width: 100%;
+		float: left;
+		border-top: 1px solid #cecece;
+		margin-bottom: 20px;
+		padding-top: 18px;
+	}
+	li.first {
+		border-top: none;
+		padding-top: 0;
+	}
+	.name {
+		margin: 0 0 5px;
+		padding: 0 0;
+		font-size: 16px;
+		font-weight: 500;
+	}
+	.description {
+		font-size: 14px;
+		position: relative;
+		@media screen and (min-width: $tabwidth) {
+			padding-right: 140px;
+		}
+	}
+	.button {
+		display: block;
+		clear: both;
+		margin-top: 10px; 
+		margin-bottom: 25px;
+		@media screen and (min-width: $tabwidth) {
+			display: inline-block;
+			position: absolute;
+			top: 0;
+			right: 0;
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+		.btn .icon {
+			margin-right: 6px;
+		}
+		.btn {
+			padding-right: 16px;
+		}
+	}
+}
+.the-other-info {
+	border: 1px dashed $color-green;
+	background: #f9f7e9;
+	padding: 20px 15px;
+	margin-top: 30px;
+	.txt1 {
+		margin: 0 0 5px;
+		font-size: 17px;
+		font-weight: 500;
+	}
+	.txt2 {
+		margin: 0 0 15px;
+	}
+}
+

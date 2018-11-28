@@ -18,7 +18,16 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
 <script defer src="<?php bloginfo( 'template_url' ); ?>/assets/svg-with-js/js/fontawesome-all.js"></script>
-<?php wp_head(); 
+<?php 
+$email = ( isset($_GET['ue']) && $_GET['ue'] ) ? $_GET['ue'] : '';
+$time = ( isset($_GET['ts']) && $_GET['ts'] ) ? $_GET['ts'] : '';
+$show_private_info = show_private_info($email,$time,300);
+if(!$show_private_info && ($email&&$time) ) {
+	wp_redirect( get_site_url() );
+}
+
+
+wp_head(); 
 $logo = get_custom_logo();
 $obj = get_queried_object();
 $is_home = ( isset($obj->post_name) && $obj->post_name=='home' ) ? true : false;
