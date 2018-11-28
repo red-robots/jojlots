@@ -42,6 +42,7 @@ a {
 	@include transition( all ease-out .3s);
 }
 .hide {display:none;}
+.site {overflow:hidden;}
 .wrapper, .clear {clear: both;}
 .wrapper:before, .wrapper:after, .clear:before,.clear:after {content: " "; display: table; }
 .wrapper:after, .clear:after {clear: both;}

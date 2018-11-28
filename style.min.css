@@ -1795,6 +1795,7 @@ body{background:url("images/pattern.png") 0 0 repeat #f6f6f6;font-family:"Roboto
 h1,h2,h3,h4,h5,h6,p,li,a,span,strong{overflow-wrap:normal;word-wrap:normal;-ms-word-break:normal;word-break:normal;word-break:normal;-ms-hyphens:none;-moz-hyphens:none;-webkit-hyphens:none;hyphens:none;page-break-inside:avoid}
 a{color:#7ea053;-webkit-transition:all ease-out .3s;transition:all ease-out .3s}
 .hide{display:none}
+.site{overflow:hidden}
 .wrapper,.clear{clear:both}
 .wrapper:before,.wrapper:after,.clear:before,.clear:after{content:" ";display:table}
 .wrapper:after,.clear:after{clear:both}
