@@ -16,7 +16,6 @@ $email = ( isset($_GET['ue']) && $_GET['ue'] ) ? $_GET['ue'] : '';
 $time = ( isset($_GET['ts']) && $_GET['ts'] ) ? $_GET['ts'] : '';
 $show_private_info = show_private_info($email,$time,300);
 
-
 $wp_query = new WP_Query(array('post_status'=>'private','pagename'=>'home'));
 get_header(); 
 
