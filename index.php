@@ -88,7 +88,7 @@ get_header();
 				<?php }  ?>
 
 				<?php if($other_info_link) { ?>
-				<a class="other-link btn" href="<?php echo $other_info_link;?>">CLICK HERE</a>
+				<a class="other-link btn" href="<?php echo $other_info_link;?>" target="_blank">CLICK HERE</a>
 				<?php }  ?>
 				
 			</div>
