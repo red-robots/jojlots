@@ -34,6 +34,7 @@ get_header();
 		}
 	?>
 	<div class="col-left">
+		<?php the_content(); ?>
 		<?php if($amenities) { ?>
 			<h3 class="title3">Amenities</h3>
 			<ul class="amenities">
