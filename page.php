@@ -21,16 +21,26 @@ get_header(); ?>
 
 			if(isset($_GET["email"])) :
 
-				while ( have_posts() ) : the_post();
+				while ( have_posts() ) : the_post(); ?>
 
-					get_template_part( 'template-parts/content', 'page' );
+			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+				<header class="entry-header">
+					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+				</header><!-- .entry-header -->
 
-					// If comments are open or we have at least one comment, load up the comment template.
-					if ( comments_open() || get_comments_number() ) :
-						comments_template();
-					endif;
+				<div class="entry-content">
+					<h2>*Builders & Investors <span class="small">(foreign or domestic)</span>:</h2>
+					<?php the_content(); ?>
 
-				endwhile; // End of the loop.
+
+				</div><!-- .entry-content -->
+
+				
+
+
+			</article><!-- #post-## -->
+
+				<?php endwhile; // End of the loop.
 
 				$topo = get_field('topographic_map');
 				$plats = get_field('plats');
