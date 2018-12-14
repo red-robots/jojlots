@@ -1801,7 +1801,7 @@ a{color:#7ea053;-webkit-transition:all ease-out .3s;transition:all ease-out .3s}
 .wrapper:after,.clear:after{clear:both}
 .wrapper,.clear{*zoom:1}
 .small{font-size:14px}
-ul{padding:0;margin:10px}
+ul{margin:0;padding:0 20px}
 .wrapper{width:100%;margin:0 auto;padding:0 20px}
 @media screen and (min-width:680px){.wrapper{width:100%}
 }@media screen and (min-width:1200px){.wrapper{width:1280px}
