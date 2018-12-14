@@ -36,15 +36,15 @@ get_header();
 	<div class="col-left">
 		<?php the_content(); ?>
 		<?php if($amenities) { ?>
-			<h3 class="title3">Amenities</h3>
-			<ul class="amenities">
+			<!-- <h3 class="title3">Amenities</h3>
+			<ul class="amenities"> -->
 				<?php foreach($amenities as $a) { ?>
-					<li>
+					<!-- <li>
 						<span class="icon"><i class="fa fa-check"></i></span>
 						<span class="info"><?php echo $a['information'];?></span>
-					</li>
+					</li> -->
 				<?php } ?>	
-			</ul>
+			<!-- </ul> -->
 		<?php } ?>
 
 		<?php /* DISPLAY ON MOBILE */ ?>
