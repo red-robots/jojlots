@@ -34,6 +34,7 @@ get_header();
 		}
 	?>
 	<div class="col-left">
+	<h2>*Builders & Investors <span class="small">(foreign or domestic)</span>:</h2>
 		<?php the_content(); ?>
 		<?php if($amenities) { ?>
 			<!-- <h3 class="title3">Amenities</h3>

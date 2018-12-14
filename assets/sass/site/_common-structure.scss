@@ -47,6 +47,9 @@ a {
 .wrapper:before, .wrapper:after, .clear:before,.clear:after {content: " "; display: table; }
 .wrapper:after, .clear:after {clear: both;}
 .wrapper, .clear {*zoom: 1;}
+.small {
+	font-size: 14px;
+}
 .wrapper {
 	width: 100%;
 	margin: 0px auto;
