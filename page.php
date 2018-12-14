@@ -62,10 +62,10 @@ get_header(); ?>
 			<div class="button">
 				<a target="_blank" href="<?php echo $wetlands; ?>">View</a>
 			</div>
-			<h2>Wetland Covenants</h2>
+			<!-- <h2>Wetland Covenants</h2>
 			<div class="button">
 				<a target="_blank" href="<?php echo $wetCovenant; ?>">View</a>
-			</div>
+			</div> -->
 			<h2>Covenants</h2>
 			<div class="button">
 				<a target="_blank" href="<?php echo $convent; ?>">View</a>
