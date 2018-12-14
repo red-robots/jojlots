@@ -61,7 +61,7 @@ get_header(); ?>
 			<div class="button">
 				<a target="_blank" href="<?php echo $wetlands; ?>">View</a>
 			</div>
-			<h2>Convenant</h2>
+			<h2>Convenants</h2>
 			<div class="button">
 				<a target="_blank" href="<?php echo $convent; ?>">View</a>
 			</div>
