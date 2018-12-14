@@ -35,6 +35,7 @@ get_header(); ?>
 				$topo = get_field('topographic_map');
 				$plats = get_field('plats');
 				$wetlands = get_field('wetlands');
+				$wetCovenant = get_field('wetland_covenant');
 				$convent = get_field('convent');
 			else:
 				echo '<h2>You must first fill out the form</h2>';
@@ -60,6 +61,10 @@ get_header(); ?>
 			<h2>Wetland Maps</h2>
 			<div class="button">
 				<a target="_blank" href="<?php echo $wetlands; ?>">View</a>
+			</div>
+			<h2>Wetland Covenants</h2>
+			<div class="button">
+				<a target="_blank" href="<?php echo $wetCovenant; ?>">View</a>
 			</div>
 			<h2>Covenants</h2>
 			<div class="button">
